@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Screen</title>
+    <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Assistant, sans-serif;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 22.5%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: rgb(245, 246, 247);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 1px, rgb(0 0 0 / 10%) 0px 1px 3px -2px, rgb(0 0 0 / 15%) 0px 5px 15px -5px;
+}
+
+.logo-wrapper figure {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.logo-wrapper img {
+    display: block;
+    object-fit: cover;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.text-wrapper h1 {
+    font-size: 56px;
+    color: black;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-wrapper h2 {
+    display: block;
+    color: rgb(109, 121, 136);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+
+.text-wrapper p {
+    margin-top: 20px;
+    color: rgb(109, 121, 136);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <article class="logo-wrapper">
+            <figure>
+                <img src="https://mobbin.design/_next/image?url=https%3A%2F%2Fujasntkfphywizsdaapi.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fcontent%2Fapp_logos%2Fbfb1b774-6161-41d0-9641-ab5325132f2e.png&w=256&q=75" alt="">
+            </figure>
+        </article>
+        <article class="text-wrapper">
+            <h1>Google News</h1>
+            <h2>Top world & local news stories</h2>
+            <p>© Google, Inc</p>
+        </article>
+    </section>
+</body>
+</html>
